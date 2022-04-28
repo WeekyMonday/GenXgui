@@ -1,0 +1,2 @@
+# GenXgui
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/lolpoppyus/Roblox-Lua/master/Pop%20UI%20Lib", true))()  local ui = library:Tab("Tab")  ui:Textbox2("Teleport", "Player", function(arg)     pcall(function()         local plr = Players.LocalPlayer.Character.HumanoidRootPart         local target = Players[arg].Character.HumanoidRootPart         plr.CFrame = target.CFrame     end)          print("Teleported to: "..tostring(arg)) end)
